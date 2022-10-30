@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SOUND VOLTEX</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="versions.html">Versions</a>
+        <a href="howtoplay.html">How To Play</a>
+        <a href="personalization.html">Personalization</a>
+        <a href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <section>
+            <img class="mySlides" src="img/exceedgear.jpg"
+            style="width:100%">
+            <img class="mySlides" src="img/gravwars.jpg"
+            style="width:100%">
+            <img class="mySlides" src="img/vivwave.jpg"
+            style="width:100%">
+        </section>
+        <center><section style="max-width:600px">
+            <h2 class="w3-wide">SOUND VOLTEX</h2>
+            <p><i>Exceed your limits<br>Your world expands</i></p>
+            <p>Developed and published by Konami Amusement Co., Ltd., Sound Voltex (<strong>SDVX</strong>) is a rhythm game series that started in Japan and has now made it's presence in aracades across the globe.</p>
+        </section></center>
+    </div>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+    </script>
+
+</body>
+
+</html>
